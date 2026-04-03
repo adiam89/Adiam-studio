@@ -1,262 +1,145 @@
 <!DOCTYPE html>
-
 <html lang="sv">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ADIAM STUDIO | Retail Concepts</title>
 
-
-
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-
-
 <style>
-
+/* Global */
 body {
-
   margin: 0;
-
   background: #F8F8F6;
-
   color: #111;
-
   font-family: 'Inter', sans-serif;
-
 }
 
-
-
-h1, h2 {
-
+/* Header / Logo */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
   font-family: 'Cormorant Garamond', serif;
-
+  font-size: 28px;
   font-weight: 500;
-
+  letter-spacing: 1px;
 }
 
-
-
-h1 { font-size: 64px; line-height: 1.1; }
-
-h2 { font-size: 36px; margin-bottom: 40px; }
-
-
-
-p { max-width: 600px; line-height: 1.6; color: #333; }
-
-
-
-.container { max-width: 1100px; margin: auto; padding: 100px 20px; }
-
-
-
+/* Hero */
 .hero {
-
   text-align: center;
-
   padding: 180px 20px;
-
   background-image: url('https://images.unsplash.com/photo-1600585154340-be6161d1a0a7?auto=format&fit=crop&w=1950&q=80');
-
   background-size: cover;
-
   background-position: center;
-
   color: #fff;
-
 }
-
-
-
-.hero h1 { color: #fff; }
-
-.hero p { color: #eee; margin-top: 20px; font-size: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
-
-
-
+.hero h1 { font-size: 64px; line-height: 1.1; }
+.hero p { margin-top: 20px; font-size: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
 .button {
-
   display: inline-block;
-
   margin-top: 30px;
-
   padding: 14px 32px;
-
   border: 1px solid #fff;
-
   text-decoration: none;
-
   color: #fff;
-
   transition: 0.3s;
-
 }
-
 .button:hover { background: #fff; color: #111; }
 
-
-
+/* Containers & Sections */
+.container { max-width: 1100px; margin: auto; padding: 100px 20px; }
 .section { border-top: 1px solid #ddd; padding-top: 80px; }
 
-
-
+/* Services */
 .service { margin-bottom: 80px; }
-
 .service h3 { display: flex; justify-content: space-between; font-weight: 500; }
-
 .price { font-size: 14px; letter-spacing: 1px; }
-
 .kpi { margin-top: 10px; font-size: 14px; color: #777; }
 
-
-
+/* CTA */
 .cta {
-
   background: #111;
-
   color: #fff;
-
   padding: 120px 20px;
-
   text-align: center;
-
 }
-
 .cta p { color: #ccc; }
-
 .cta .button { border-color: #fff; color: #fff; }
 
+/* Responsive */
+@media(max-width:768px){
+  .hero h1 { font-size: 44px; }
+  .hero p { font-size: 18px; }
+}
 </style>
-
 </head>
-
-
 
 <body>
 
+<!-- Header / Logo -->
+<header>ADIAM STUDIO</header>
 
-
-<!-- HERO -->
-
+<!-- Hero -->
 <div class="hero">
-
   <h1>Retail concepts that drive sales</h1>
-
   <p>Jag hjälper varumärken att utveckla butikskoncept där <strong>positionering, kundupplevelse och försäljning</strong> hänger ihop. Varje butik, pop-up och sample sale blir noggrant utformad för att <strong>förstärka varumärket och maximera resultat</strong>.</p>
-
   <a href="#" class="button">Boka konsultation</a>
-
 </div>
 
-
-
-<!-- OM MIG -->
-
+<!-- Om -->
 <div class="container section">
-
   <h2>Om ADIAM STUDIO</h2>
-
   <p>Med lång erfarenhet som butikschef har jag utvecklat en unik förståelse för hur kunder rör sig i butik, hur visuella detaljer påverkar köp och hur teamets beteende formar hela upplevelsen.</p>
-
   <p>Jag kombinerar ett <strong>starkt visuellt öga</strong> med <strong>affärsfokus</strong> – och arbetar alltid med tydliga KPI:er som konvertering, snittköp och försäljning per kvadratmeter.</p>
-
   <p>Min approach är <strong>hands-on, kreativ och strategisk</strong>. Jag tar ansvar från idé till färdig butik, pop-up eller sample sale. Jag ser detaljer som andra missar och vet hur man förvandlar en butik till en upplevelse som <strong>kunder kommer ihåg</strong>.</p>
-
 </div>
 
-
-
-<!-- TJÄNSTER -->
-
+<!-- Tjänster -->
 <div class="container section">
-
   <h2>Tjänster</h2>
 
-
-
   <div class="service">
-
     <h3>Butiksanalys & Optimering <span class="price">50 000 SEK</span></h3>
-
     <p>För brands som vill förstå varför försäljningen inte når sin fulla potential. Jag analyserar layout, kundflöde, exponering och personalens säljbeteenden. Resultatet är en <strong>konkret handlingsplan</strong> med snabba vinster och långsiktiga förbättringar.</p>
-
     <div class="kpi">KPI: Konvertering · Snittköp · Försäljning per m²</div>
-
   </div>
 
-
-
   <div class="service">
-
     <h3>Butiksutveckling & Performance <span class="price">85 000 – 100 000 SEK</span></h3>
-
     <p>För brands som vill ta ett helhetsgrepp om butikens prestation. Jag omstrukturerar flöde, visual merchandising och teamets arbetssätt. Varje åtgärd är kopplad till KPI:er och brandets positionering, så att butiken blir en stark försäljningsmotor.</p>
-
     <div class="kpi">KPI: Konvertering · Sälj per anställd · Brand consistency</div>
-
   </div>
-
-
 
   <div class="service">
-
     <h3>Pop-up & Sample Sale Koncept <span class="price">60 000 – 90 000 SEK</span></h3>
-
     <p>Utveckling av temporära upplevelser med maximal effekt. Jag tar fram koncept, layout och säljstrategi för att <strong>driva försäljning, engagera kunder och förstärka varumärket</strong>. Kundresan är noggrant designad, från entré till kassa.</p>
-
     <div class="kpi">KPI: Försäljning per dag · Lageromsättning · Snittköp</div>
-
   </div>
 
-
-
 </div>
 
-
-
-<!-- RESULTAT / CASE -->
-
+<!-- Resultat / Case -->
 <div class="container section">
-
   <h2>Resultat</h2>
-
   <p>+18% konvertering genom optimerat kundflöde</p>
-
   <p>+25% snittköp genom förbättrad exponering</p>
-
   <p>Pop-up som sålde ut på 3 dagar</p>
-
   <p>Alla projekt är designade för att skapa <strong>konkreta och hållbara resultat</strong>.</p>
-
 </div>
-
-
 
 <!-- CTA -->
-
 <div class="cta">
-
   <div class="container">
-
     <h2>Ready to elevate your retail?</h2>
-
     <p>Om du vill ta din butik, pop-up eller sample sale till nästa nivå – med fokus på <strong>premium upplevelse och mätbara resultat</strong> – låt oss prata.</p>
-
     <a href="#" class="button">Kontakta mig</a>
-
   </div>
-
 </div>
 
-
-
 </body>
-
 </html>
-
